@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Build Docker image
-      run: docker buildx build --platform linux/amd64 -t mqtt-freeRTOS2 .
+      run: docker buildx build --platform linux/amd64 -t mqtt-freertos2 .
 
     - name: Login to DockerHub
       uses: docker/login-action@v3
@@ -25,5 +25,5 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker tag mqtt-freeRTOS2:latest zimbora/mqtt-freeRTOS2:latest
-        docker push zimbora/mqtt-freeRTOS2:latest
+        docker tag mqtt-freertos2:latest zimbora/mqtt-freertos2:latest
+        docker push zimbora/mqtt-freertos2:latest
