@@ -25,5 +25,6 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker tag qtt-freeRTOS2:latest zimbora/qtt-freeRTOS2:latest
-        docker push zimbora/qtt-freeRTOS2:latest
+        docker tag mqtt-freeRTOS2:latest zimbora/mqtt-freeRTOS2:latest
+        docker push zimbora/mqtt-freeRTOS2:latest
+
