@@ -1,7 +1,6 @@
 config = require('./config');
 const fs = require('fs');
 
-console.log("hello")
 global.BASE_DIR = process.cwd();
 console.log(`Current Directory: ${process.cwd()}`);
 var projectsPath = './projects/';
